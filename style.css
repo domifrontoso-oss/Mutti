@@ -1,0 +1,98 @@
+
+body {
+    font-family: Arial;
+    font-size: 18px;
+    background-color: #eeecec;
+    margin: 0;/*toglie lo spazio attorno alla pagina su tutti e 4 i lati*/
+}
+
+
+header {
+    background-color: #c62828;
+    padding: 30px; /*spazio tra contenuto e bordo*/
+}
+
+.logo {
+    height: 130px;
+}
+
+main {
+    padding: 30px; /*spazio attorno al cotenuto*/
+    max-width: 1000px; /*larghezza massima contenuto pagina*/
+    margin: auto; /*centra il contenuto*/
+}
+
+
+/* Pulsante download */
+a {
+    padding: 15px;
+    background-color: #c62828;
+    color: white; /*colore testo */
+    text-decoration: none; /*toglie la sottolineatura nel testo*/
+}
+
+/*testo e pulsante al centro*/
+.bottone-download{
+  text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #e4e3e3;
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    display: block;       /* forza a capo */
+    margin: auto;   /*browser calcola margine in automatico*/
+    width: 320px;    /* larghezza immagine */
+    height: auto;         /* mantiene proporzioni */
+}
+
+
+.row-img{
+  display: flex;
+
+}
+
+/*per il div delle immagini e dei grafici, immagini poste in orizzontalle, ogni colonna(quindi immagine) occupa spazio disponibile in proporzione agli altri elementi flessibili*/
+.column-img {
+  flex: 1;
+  padding: 5px;
+}
+
+.row-grafici{
+  display: flex;
+}
+
+.column-grafici{
+  flex: 1;
+  padding: 5px;
+}
+
+/*sul tag img del div con class column-img specifico una larghezza diversa rispetto a quella impostata sul tag img di base */
+.column-grafici img{
+  width: 500px;
+}
+
+
+table {
+    width: 100%; /*tabella occupa tutta la larghezza*/
+    border-collapse: collapse; /*unisce le celle*/
+    margin: 30px 0; /*margine top e bottom a 30px mentre right e left 0*/
+}
+
+th, td {
+    border: 3px solid #ccc; /* bordo alle celle di colore grigietto */
+    padding: 10px; /* spazio all'interno della cella */
+}
+
+/*intestazione tabella, sfondo rosso e testo bianco*/
+thead {
+    background-color: #c62828;
+    color: white;
+}
+
+
+
